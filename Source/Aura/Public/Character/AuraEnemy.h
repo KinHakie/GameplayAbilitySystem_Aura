@@ -17,11 +17,11 @@ class AURA_API AAuraEnemy : public AAuraCharacterBase, public ITargetInterface
 
 public:
 
+	AAuraEnemy();
 	virtual void HighlightActor() override;
 	virtual void UnHighlightActor() override;
 
-	UPROPERTY(BlueprintReadOnly, Category = Try)
-	bool IsHighlighted = false;
+	
 
 	
 };
