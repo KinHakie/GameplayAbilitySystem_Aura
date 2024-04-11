@@ -19,7 +19,7 @@ UAbilitySystemComponent* AAuraCharacterBase::GetAbilitySystemComponent() const
 	return AbilitySystemComponent;
 }
 
-UAttributeSet* AAuraCharacterBase::GetAttributeSet() const
+UAuraAttributeSet* AAuraCharacterBase::GetAttributeSet() const
 {
 	return AttributeSet;
 }

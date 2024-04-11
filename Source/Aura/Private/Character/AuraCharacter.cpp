@@ -5,6 +5,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Player/AuraPlayerState.h"
 #include "AbilitySystem/AuraAbilitySystemComponent.h"
+#include "AbilitySystem/AuraAttributeSet.h"
 
 
 
@@ -24,7 +25,7 @@ AAuraCharacter::AAuraCharacter()
 
 void AAuraCharacter::BeginPlay()
 {
-	
+	Super::BeginPlay();
 }
 
 void AAuraCharacter::InitAbilityActorInfo()

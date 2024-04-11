@@ -2,11 +2,20 @@
 
 
 #include "AbilitySystem/AuraAttributeSet.h"
-#include "AbilitySystemComponent.h"
+
 #include "Net/UnrealNetwork.h"
 
 UAuraAttributeSet::UAuraAttributeSet()
 {
+	InitHealth(100.f);
+	UE_LOG(LogTemp, Warning, TEXT("Health: %f"), GetHealth());
+	InitMaxHealth(100.f);
+	UE_LOG(LogTemp, Warning, TEXT("MaxHealth: %f"), GetMaxHealth());
+	
+	InitMana(100.f);
+	UE_LOG(LogTemp, Warning, TEXT("Mana: %f"), GetMana());
+	InitMaxMana(100.f);
+	UE_LOG(LogTemp, Warning, TEXT("MaxMana:%f"), GetMaxMana());
 
 }
 

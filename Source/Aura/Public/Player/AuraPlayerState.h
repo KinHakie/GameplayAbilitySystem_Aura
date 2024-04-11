@@ -9,7 +9,7 @@
 
 
 class UAbilitySystemComponent;
-class UAttributeSet;
+class UAuraAttributeSet;
 
 
 /**
@@ -24,7 +24,7 @@ public:
 	AAuraPlayerState();
 
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
-	UAttributeSet* GetAttributeSet() const;
+	UAuraAttributeSet* GetAttributeSet() const;
 
 protected:
 
@@ -33,5 +33,5 @@ protected:
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
 
 	UPROPERTY()
-	TObjectPtr<UAttributeSet> AttributeSet;
+	TObjectPtr<UAuraAttributeSet> AttributeSet;
 };
