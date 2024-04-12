@@ -7,7 +7,7 @@
 
 UAuraAttributeSet::UAuraAttributeSet()
 {
-	InitHealth(100.f);
+	InitHealth(50.f);
 	UE_LOG(LogTemp, Warning, TEXT("Health: %f"), GetHealth());
 	InitMaxHealth(100.f);
 	UE_LOG(LogTemp, Warning, TEXT("MaxHealth: %f"), GetMaxHealth());
