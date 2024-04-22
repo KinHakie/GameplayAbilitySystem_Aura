@@ -29,7 +29,7 @@ public:
 protected:
 
 	void BeginPlay() override;
-	
+	virtual void InitAbilityActorInfo() override;
 
 	
 };
