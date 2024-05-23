@@ -49,6 +49,8 @@ void AAuraCharacter::InitAbilityActorInfo()
 		}
 		
 	}
+
+	InitializeDefaultAttributes();
 	
 }
 
@@ -59,7 +61,7 @@ void AAuraCharacter::PossessedBy(AController* NewController)
 
 	//Init Ability Actor info for the Server
 	InitAbilityActorInfo();
-	
+	AddCharacterAbilities();
 }
 
 void AAuraCharacter::OnRep_PlayerState()
@@ -70,3 +72,12 @@ void AAuraCharacter::OnRep_PlayerState()
 	InitAbilityActorInfo();
 	
 }
+
+int32 AAuraCharacter::GetPlayerLevel()
+{
+	const AAuraPlayerState* AuraPlayerState = GetPlayerState<AAuraPlayerState>();
+	check(AuraPlayerState);
+	return AuraPlayerState->GetPlayerLevel();
+}
+
+
